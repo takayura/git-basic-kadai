@@ -1,0 +1,32 @@
+PS C:\Users\yuray\git_challenge> git init
+Initialized empty Git repository in C:/Users/yuray/git_challenge/.git/  
+PS C:\Users\yuray\git_challenge> git add .
+>>
+PS C:\Users\yuray\git_challenge> git add hello_world.txt
+fatal: pathspec 'hello_world.tx> git_challenge> git commit -m "hello_world.txtを追加"uray\git_challenge>
+git_challenge> : 用語 'git_challenge>' は、コマンドレット、関数、スクリ
+プト ファイル、または操作可能なプログラムの名前として認識されません。名
+前が正しく記述されていることを確認し、パスが含まれている場合はそのパス
+が正しいことを確認してから、再試行してください。
+発生場所 行:1 文字:1
++ git_challenge> git commit -m "hello_world.txtを追加"
++ ~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (git_challenge>:String)   
+   [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\yuray\git_challenge> echo "hello_world,txtを追加" >> hello_world.txt
+PS C:\Users\yuray\git_challenge> git add hello_world.txt
+PS C:\Users\yuray\git_challenge> git commit -m "hello_world.txtを追加"  
+[main (root-commit) 1d05733] hello_world.txt繧定ｿｽ蜉
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+PS C:\Users\yuray\git_challenge> echo "日本語訳を追記" >> hello_world.txt           
+PS C:\Users\yuray\git_challenge> git add hello_world.txt
+warning: in the working copy of 'hello_world.txt', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\yuray\git_challenge> git commit -m "日本語訳を追記"         
+[main 5bd5bc9] 譌･譛ｬ隱櫁ｨｳ繧定ｿｽ險
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\yuray\git_challenge> git log --oneline
+5bd5bc9 (HEAD -> main) 日本語訳を追記
+1d05733 hello_world.txtを追加
